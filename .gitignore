@@ -1,5 +1,14 @@
-#lanuch
+# lanuch
 lanuch.py
+
+# VPN
+vpn*
+
+# word2vec model
+*.bin
+
+# result text
+post.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
