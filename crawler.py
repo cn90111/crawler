@@ -19,7 +19,7 @@ class Crawler():
 
     def get_select_element(self, select_tag, full_text=None):
         if not full_text:
-            full_text = self.get_full_text()
+            full_text = self.get_response().text
         soup = BeautifulSoup(full_text, "html.parser")
         element = soup.select(select_tag)
         return element
@@ -38,7 +38,7 @@ class Crawler():
         
     def remove_html(self, select_tag, full_text=None):
         if not full_text:
-            full_text = self.get_full_text()
+            full_text = self.get_response().text
         soup = BeautifulSoup(full_text, "html.parser")
         delete_elements = soup.select(select_tag)
         for element in delete_elements:
