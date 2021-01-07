@@ -1,11 +1,23 @@
-# lanuch
-*_lanuch.py
+# launch
+*_launch.py
+
+# log
+*_log.txt
 
 # VPN
 vpn*
 
+# test captcha
+*.bmp
+*.jpg
+error_captcha
+
+# jieba
+dict.txt.big
+
 # word2vec model
 *.bin
+*.npy
 
 # result text
 post.md
